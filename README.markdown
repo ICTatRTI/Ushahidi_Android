@@ -12,7 +12,7 @@ For more information visit:
 * [Issue Tracker](https://github.com/ushahidi/Ushahidi_Android/issues)
 * [API Documentation For Ushahidi](http://wiki.ushahidi.com/doku.php?id=ushahidi_api)
 * [Code Repository](http://github.com/ushahidi/Ushahidi_Android)
-* [Release Status](http://dev.ushahidi.com/projects/Ushahidi_Android/news) 
+
 
 ### How To White-Label The App ###
 

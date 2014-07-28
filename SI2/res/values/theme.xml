@@ -2,7 +2,7 @@
     <!-- DEPLOYMENT INFORMATION -->
     <!-- DO NOT USE ACCENTED CHARACTERS (This is like being back in 1989) -->
     <string name="app_title">Seguridad Inalambrica</string>
-    <string name="deployment_url">http://si.idg-rti.org/</string>
+    <string name="deployment_url">http://si2demo.ictedge.org/</string>
     <string name="team_url">http://ictedge.org/home</string>
     <string name="media_url">http://ictedge.org/projects</string>
     <string name="twitter_url">http://twitter.com/ICTatRTI</string>
@@ -23,8 +23,10 @@
     <drawable name="splash_background">@drawable/splash</drawable>
     <drawable name="dashboard_background">@drawable/dashboard</drawable>
     <drawable name="about_background">@drawable/about</drawable>
+    <!--
     <drawable name="actionbar_background">@drawable/actionbar</drawable>
-
+	-->
+	
 	<!-- COLOR CODES -->
     <color name="title_color">#7C2811</color>
     <color name="date_color">#262321</color>

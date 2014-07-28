@@ -95,6 +95,10 @@
 	<string name="hint_email"> </string>
 	<string name="total_reports">Número de reportes</string>
 	<string name="txt_phonenumber">Número del móvil</string>
+	<string name="txt_user_name">Número de usuario</string>
+	<string name="hint_user_name">la obligación de presentar informes</string>
+	<string name="txt_password">Contraseña</string>
+	<string name="hint_password">la obligación de presentar informes</string>
 	<string name="hint_phonenumber"> </string>
 	<string name="hint_total_reports">La cantidad de reportes a tomar desde la instancia seleccionada</string>
 	<string name="no_reports">No hay reportes para mostrar</string>

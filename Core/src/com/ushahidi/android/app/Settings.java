@@ -56,7 +56,9 @@ public class Settings extends PreferenceActivity implements
 
 	private EditTextPreference phoneNumberPref;
 
-//	private EditTextPreference password;
+	private EditTextPreference passwordPref;
+	
+	private EditTextPreference usernamePref;
 
 	private CheckBoxPreference autoFetchCheckBoxPref;
 
@@ -149,12 +151,14 @@ public class Settings extends PreferenceActivity implements
 		firstNamePref = new EditTextPreference(this);
 
 		lastNamePref = new EditTextPreference(this);
+		
+		usernamePref = new EditTextPreference(this);
 
 		emailAddressPref = new EditTextPreference(this);
 
 		phoneNumberPref = new EditTextPreference(this);
 
-//		password = new EditTextPreference(this);
+		passwordPref = new EditTextPreference(this);
 //		password.setOnPreferenceChangeListener(this);
 
 		autoFetchCheckBoxPref = new CheckBoxPreference(this);
@@ -282,15 +286,23 @@ public class Settings extends PreferenceActivity implements
 		phoneNumberPref.setTitle(R.string.txt_phonenumber);
 		phoneNumberPref.setSummary(R.string.hint_phonenumber);
 		phoneNumberPref.getEditText().setInputType(InputType.TYPE_CLASS_PHONE);
-
-		// Aman password entry field
-//		password.setDialogTitle("Password");
-//		password.setKey("password_prefrence");
-//		password.setTitle("Password");
-//		password.setSummary("Enter Password to view Advance settings");
-//		password.getEditText().setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
-//		userIdPrefCat.addPreference(password);
-
+		
+		// Username
+		usernamePref.setDialogTitle(R.string.txt_user_name);
+		usernamePref.setKey("user_name_preferences");
+		usernamePref.setTitle(R.string.txt_user_name);
+		usernamePref.setSummary(R.string.hint_user_name);
+		usernamePref.getEditText().setInputType(InputType.TYPE_CLASS_TEXT);
+		userIdPrefCat.addPreference(usernamePref);
+		
+		// Password
+		passwordPref.setDialogTitle(R.string.txt_password);
+		passwordPref.setKey("password_preferences");
+		passwordPref.setTitle(R.string.txt_password);
+		passwordPref.setSummary(R.string.hint_password);
+		passwordPref.getEditText().setInputType(InputType.TYPE_CLASS_TEXT);
+		userIdPrefCat.addPreference(passwordPref);
+		
 		/**
 		 * Commenting out this code so it doesn't prompt users for opengeoSMS
 		 * basicPrefCat.addPreference(phoneNumberPref); TODO:// re-enable this when
@@ -466,6 +478,9 @@ public class Settings extends PreferenceActivity implements
 				editor.putString("Lastname", lastNamePref.getText());
 				editor.putString("Email", emailAddressPref.getText());
 				editor.putString("Phonenumber", phoneNumberPref.getText());
+				editor.putString("Username", usernamePref.getText());
+				editor.putString("Password", passwordPref.getText());
+				
 				editor.putString("default_latitude_preference", defaultLatitudePref.getText());
 				editor.putString("default_longitude_preference", defaultLongitudePref.getText());
 				editor.putString("savePath", newSavePath);

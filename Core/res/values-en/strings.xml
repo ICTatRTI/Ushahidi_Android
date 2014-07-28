@@ -95,6 +95,10 @@
 	<string name="hint_email">For contact purposes only.</string>
 	<string name="total_reports">Number of reports</string>
 	<string name="txt_phonenumber">Mobile phone number</string>
+	<string name="txt_user_name">Username</string>
+	<string name="hint_user_name">Required for submitting reports</string>
+	<string name="txt_password">Password</string>
+	<string name="hint_password">Required for submitting reports</string>
 	<string name="hint_phonenumber">For send report only.</string>
 	<string name="hint_total_reports">The total number of reports to fetch from	the	selected deployment.</string>
 	<string name="no_reports">There are no reports to be shown</string>

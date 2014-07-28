@@ -36,6 +36,8 @@ public class Incidents {
         uriBuilder.append("/api?task=incidents");
         uriBuilder.append("&by=all");
         uriBuilder.append("&limit=" + Preferences.totalReports);
+        uriBuilder.append("&u="+Preferences.username);
+        uriBuilder.append("&p="+Preferences.password);
         uriBuilder.append("&resp=xml");
 
         response = MainHttpClient.GetURL(uriBuilder.toString());

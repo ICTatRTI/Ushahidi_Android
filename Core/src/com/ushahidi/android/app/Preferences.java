@@ -106,8 +106,8 @@ public class Preferences {
 		mapZoom = settings.getInt("mapZoom", 11);
 		reportImageCount = settings.getInt("report_image_count_temp", 6);
 		appRunsFirstTime = settings.getInt("AppRunsFirstTime", appRunsFirstTime);
-		username = settings.getString("username", "");
-		password = settings.getString("password", "");
+		username = settings.getString("Username", "");
+		password = settings.getString("Password", "");
 
 		locationTolerance = settings.getInt("locationTolerance", 5);
 		gpsTimeout = settings.getInt("gps_timeout_preference_temp", 60);
